@@ -505,7 +505,7 @@ footer .submit {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px) {
   .hero__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -514,9 +514,15 @@ footer .submit {
     height: 50vh;
     width: 100%;
   }
+  #hero .hero__row .hero__content {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    right: 10%;
+  }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-device-width: 560px) {
   .hero__row .hero__item_1 {
     height: 100vh;
     width: 100%;

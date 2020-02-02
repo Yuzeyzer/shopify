@@ -346,7 +346,7 @@ footer {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-device-width:768px) {
     .hero__row {
         flex-wrap: wrap;
         .hero__item_1 {
@@ -354,8 +354,14 @@ footer {
             width: 100%;
         }
     }
+    #hero .hero__row .hero__content {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        right: 10%;
+    }
 }
-@media screen and (max-width:560px) {
+@media screen and (max-device-width:560px) {
     .hero__row {
         .hero__item_1 {
             height: 100vh;
