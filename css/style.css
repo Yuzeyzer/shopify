@@ -394,10 +394,4 @@ footer .submit {
     font-size: 7px;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 5px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
