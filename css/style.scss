@@ -315,8 +315,12 @@ footer {
     background-color: #fff;
     z-index: 9999;
     li {
+        text-align: center;
         text-transform: uppercase;
-        margin-top: 2rem;
+        margin:3rem 0 !important;
+    }
+    .menu__phone, .nav__list,.menu__quote {
+        display: block !important;
     }
 }
 .owl-dots {
@@ -333,6 +337,10 @@ footer {
         .hero__item_1 {
             height: 100vh;
             width: 100%;
+            .nav__list {
+                margin: 2rem 0;
+                flex-direction: column;
+            }
             .menu__phone, .nav__list,.menu__quote {
                 display: none;
             }
@@ -359,6 +367,22 @@ footer {
         top: 25%;
         left: 20%;
         right: 10%;
+        &::before {
+            display: none;
+        }
+        h1 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                height: 0.3rem;
+                width: 10.5rem;
+                bottom: -15%;
+                left: -3%;
+                transform: translateY(0) translateX(-51%);
+                background-color: $lightblue;
+            }
+        }
     }
 }
 @media screen and (max-device-width:560px) {
