@@ -171,7 +171,7 @@ body {
     padding: 8.8rem 0 14rem;
     background-color: $blue;
     .facilities__item {
-        padding: 0 5rem;
+        padding: 2rem 5rem;
     }
     h3 {
         font-size: 1.8rem;
@@ -259,6 +259,66 @@ footer {
         cursor: pointer;
     }
 }
+.mobile__btn {
+    position: fixed;
+    right: 6rem;
+    top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: $green;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999999;
+    span {
+        position: relative;
+        height: 0.3rem;
+        width: 60%;
+        background-color: #fff;
+    }
+        span::before,span::after {
+            content: '';
+            position: absolute;
+            height: 0.3rem;
+            width: 100%;
+            background-color: inherit;
+            transition: 0.3s;
+        }
+        span::before {
+            transform: translateY(-1rem);
+        }
+        span::after {
+            transform: translateY(1rem);
+        }
+}
+.mobile__btn_active span {
+    height: 0;
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+.nav-list-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 9999;
+    li {
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+}
 .owl-dots {
     display: none !important;
 }
@@ -266,4 +326,37 @@ footer {
     html {
         font-size: 7px;
     }
+}
+@media screen and (max-width:1024px) {
+    .hero__row {
+        flex-wrap: wrap;
+        .hero__item_1 {
+            height: 100vh;
+            width: 100%;
+            .menu__phone, .nav__list,.menu__quote {
+                display: none;
+            }
+        }
+        .hero__item_2 {
+            max-width: 100% !important;
+        }
+    }
+    .footer__item {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero__row {
+        flex-wrap: wrap;
+        .hero__item_1 {
+            height: 50vh;
+            width: 100%;
+        }
+        .hero__item_2 {
+            max-width: 100% !important;
+        }
+    }
+}
+@media screen and (max-width:560px) {
 }
