@@ -66,6 +66,10 @@
   color: #292c37;
 }
 
+.white {
+  background-color: #fff;
+}
+
 .gray {
   color: #797d89;
 }
@@ -239,6 +243,14 @@ body {
   border-radius: 10rem;
   font-weight: 800;
   color: #292c37;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#hero .hero__row .hero__content .hero__btn + .hero__btn:hover {
+  background-color: #292c37;
+  border: 0.2rem solid #fff;
+  color: #fff;
 }
 
 #hero .hero__row .hero__social {
@@ -291,9 +303,49 @@ body {
 #facilities a {
   margin: 2.5rem 0 0 0;
   padding: 1.2rem 2.8rem;
+  font-size: 1.3rem;
   border-radius: 2rem;
   border: 0.1rem solid #797d89;
   color: #fff;
+}
+
+#services {
+  padding: 9rem 0;
+  background-color: #fafafa;
+}
+
+#services .row {
+  margin: 0 -3rem;
+}
+
+#services .services__col:hover .services__item {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#services .services__item {
+  height: 100%;
+  width: 100%;
+  padding: 4.5rem 3rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 0.2rem 0.02rem #797d89;
+          box-shadow: 0 0 0.2rem 0.02rem #797d89;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#services .services__item img {
+  min-height: 12rem;
+}
+
+#services .services__item h4 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #151e40;
+  font-weight: 500;
 }
 
 footer {
@@ -313,7 +365,7 @@ footer .company li {
 
 footer .company li a {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 800;
   color: #151e40;
 }
 
@@ -323,14 +375,15 @@ footer .call li {
 
 footer .call li i {
   display: inline-block;
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
   margin-right: 1rem;
   width: 1.5rem;
+  font-weight: 800;
 }
 
 footer .call li a {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #151e40;
 }
 
@@ -378,11 +431,84 @@ footer .submit {
   padding: 1.2rem 0;
   border: none;
   font-size: 1.2rem;
-  font-weight: 500;
   border-radius: 10rem;
   color: #fff;
   background-color: #151e40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
+}
+
+footer .submit:hover {
+  -webkit-box-shadow: 0 0 0 0.2rem #151e40;
+          box-shadow: 0 0 0 0.2rem #151e40;
+  background-color: #fff;
+  color: #151e40;
+}
+
+footer .social li {
+  margin-right: 2rem;
+}
+
+footer .social li a {
+  min-width: 3.8rem;
+  min-height: 3.8rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #797d89;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social li a:hover {
+  background-color: #73bc00;
+}
+
+footer .footer__bottom {
+  padding: 7.5rem 0 0;
+  font-size: 1.4rem;
+  color: #797d89;
+}
+
+footer .footer__bottom .foot__item_list {
+  float: right;
+}
+
+footer .footer__bottom .foot__item_list li {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+footer .footer__bottom .foot__item_list li:nth-child(2) {
+  position: relative;
+}
+
+footer .footer__bottom .foot__item_list li:nth-child(2):before {
+  left: -25%;
+}
+
+footer .footer__bottom .foot__item_list li:nth-child(2):before, footer .footer__bottom .foot__item_list li:nth-child(2):after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 0.1rem;
+  background-color: #797d89;
+}
+
+footer .footer__bottom .foot__item_list li:nth-child(2):after {
+  right: -25%;
+}
+
+footer .footer__bottom .foot__item_list a {
+  font-weight: 500;
+  color: #797d89;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .footer__bottom .foot__item_list a:hover {
+  color: #151e40;
 }
 
 .mobile__btn {
@@ -518,6 +644,21 @@ footer .submit {
   .footer__item {
     padding: 2rem 0;
   }
+  .foot__item_list {
+    float: left !important;
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foot__item_list li {
+    margin-top: 2rem;
+    margin-left: 0 !important;
+  }
+  .foot__item_list li::before, .foot__item_list li::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -549,6 +690,7 @@ footer .submit {
     margin-left: 0 !important;
     margin-top: 2rem !important;
     text-align: center;
+    padding: 1.3rem 9rem;
   }
   #hero .hero__row .hero__content {
     position: absolute;

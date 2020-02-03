@@ -7,6 +7,9 @@ $black:#292c37;
 .black {
     color:$black;
 }
+.white {
+    background-color: #fff;
+}
 .gray {
     color: $gray;
 }
@@ -144,6 +147,12 @@ body {
                 border-radius: 10rem;
                 font-weight:800;
                 color: $black;
+                transition: 0.4s;
+            }
+            .hero__btn + .hero__btn:hover {
+                background-color: $black;
+                border: 0.2rem solid #fff;
+                color: #fff;
             }
         }
         .hero__social {
@@ -189,9 +198,39 @@ body {
     a {
         margin: 2.5rem 0 0 0;
         padding: 1.2rem 2.8rem;
+        font-size: 1.3rem;
         border-radius: 2rem;
         border: 0.1rem solid $gray;
         color: #fff;
+    }
+}
+#services {
+    padding: 9rem 0;
+    background-color: #fafafa;
+    .row {
+        margin: 0 -3rem;
+    }
+    .services__col:hover .services__item{
+        transform: scale(1.05);
+    }
+    .services__item {
+        height: 100%;
+        width: 100%;
+        padding: 4.5rem 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 0.2rem 0.02rem $gray;
+        background-color: #fff;
+        transition: 0.2s;
+        transform: scale(1);
+        img {
+            min-height: 12rem;
+        }
+        h4 {
+            margin-top: 3rem;
+            font-size: 1.8rem;
+            color: $blue;
+            font-weight: 500;
+        }
     }
 }
 footer {
@@ -207,7 +246,7 @@ footer {
             margin-bottom: 1.5rem;
             a {
                 font-size: 1.5rem;
-                font-weight: 600;
+                font-weight: 800;
                 color: $blue;
             }
         }
@@ -217,13 +256,14 @@ footer {
             margin-bottom: 1.5rem;
             i {
                 display:inline-block;
-                font-size: 1.5rem !important;
+                font-size: 1.6rem !important;
                 margin-right: 1rem;
                 width: 1.5rem;
+                font-weight: 800;
             }
             a {
                 font-size: 1.5rem;
-                font-weight: 700;
+                font-weight: 800;
                 color: $blue;
             }
         }
@@ -254,11 +294,69 @@ footer {
         padding: 1.2rem 0;
         border: none;
         font-size: 1.2rem;
-        font-weight: 500;
         border-radius: 10rem;
         color: #fff;
         background-color: $blue;
+        transition: 0.3s;
         cursor: pointer;
+    }
+    .submit:hover {
+        box-shadow: 0 0 0 0.2rem $blue;
+        background-color: #fff;
+        color: $blue;
+    }
+    .social {
+        li {
+            margin-right: 2rem;
+            a {
+            min-width: 3.8rem;
+            min-height: 3.8rem;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: $gray;
+            border-radius: 50%;
+            transition: 0.3s;
+            }
+            a:hover {
+                background-color: $green;
+            }
+        }
+    }
+    .footer__bottom {
+        padding: 7.5rem 0 0;
+        font-size: 1.4rem;
+        color: $gray;
+        .foot__item_list {
+            float: right;
+            li {
+                margin-right: 2.5rem;
+                margin-left: 2.5rem;
+            }
+            li:nth-child(2) {
+                position: relative;
+            }
+            li:nth-child(2):before {
+                left: -25%;
+            }
+            li:nth-child(2):before,li:nth-child(2):after {
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 0.1rem;
+                background-color: $gray;
+            }
+            li:nth-child(2):after {
+                right: -25%;
+            }
+            a {
+                font-weight: 500;
+                color: $gray;
+                transition: 0.3s;
+            }
+            a:hover {
+                color: $blue;
+            }
+        }
     }
 }
 .mobile__btn {
@@ -328,6 +426,30 @@ footer {
 .owl-dots {
     display: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1366px) {
     html {
         font-size: 7px;
@@ -357,6 +479,18 @@ footer {
     .footer__item {
         padding: 2rem 0;
     }
+    .foot__item_list {
+        float: left !important;
+        margin-top: 1rem;
+        flex-direction: column;
+        li {
+            margin-top: 2rem;
+            margin-left: 0 !important;
+            &::before,&::after {
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -380,6 +514,7 @@ footer {
             margin-left:0 !important;
             margin-top: 2rem !important;
             text-align: center;
+            padding: 1.3rem 9rem;
     }
 }
      .hero__row .hero__content {

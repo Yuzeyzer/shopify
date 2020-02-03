@@ -14,11 +14,13 @@ Version:0.0.2 */
           .m-auto {
             margin: auto;
           }
-          .container {
-            max-Width: 60%;
-            Margin: auto;
+          .p-2 {
+            padding: 2rem;
           }
-          
+          .container {
+            max-Width: 60%;  /*только в данном случаем*/
+            Margin: auto;
+          }       
           .flex {
             Display: flex;
           }
@@ -128,11 +130,6 @@ Version:0.0.2 */
           :focus {
             outline: none;
           }
-          
-          /* ::before, ::after {
-                      content: '';
-                      position: absolute;
-                    } */
           .col-12 {
             width: 100%;
           }
@@ -232,15 +229,15 @@ Version:0.0.2 */
             }
           }
           
-          @media screen and (max-width: 425px) {
+          @media screen and (max-width: 576px) {
             .col-3 {
-              width: 100%;
+              width: 100% !important;
             }
             .col-2 {
-              width: 100%;
+              width: 100% !important;
             }
             .col-1 {
-              width: 100%;
+              width: 100% !important;
             }
           }
           /*# sourceMappingURL=style.css.map */

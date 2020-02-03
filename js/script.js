@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('.menu').toggleClass('nav-list-active')
     });
     $('.nav__list_item').on('click', function(){
-        $('.nav-list').removeClass('nav-list-active');
+        $('.menu').removeClass('nav-list-active');
         $('.mobile__btn').removeClass('mobile__btn_active');
     });
   });
