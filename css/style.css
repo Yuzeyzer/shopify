@@ -113,19 +113,19 @@ body {
   width: 100vw;
 }
 
-#hero::before {
+#hero .hero__row {
+  height: 100%;
+}
+
+#hero .hero__row .hero__item_1::before {
   position: absolute;
   content: '';
-  height: 99%;
+  height: 98.8%;
   width: 10.5rem;
   left: 0;
   top: 0.04rem;
   border-top: 0.4rem solid #73bc00;
   border-bottom: 0.4rem solid #73bc00;
-}
-
-#hero .hero__row {
-  height: 100%;
 }
 
 #hero .hero__row .hero__item_2 {
@@ -541,10 +541,10 @@ footer .submit {
   #hero .hero__row .hero__content h1::before {
     position: absolute;
     content: '';
-    height: 0.3rem;
-    width: 10.5rem;
-    bottom: -10%;
-    left: -3%;
+    height: 10.5rem;
+    width: 0.3rem;
+    top: 35%;
+    left: -10%;
     -webkit-transform: translateY(0) translateX(-51%);
             transform: translateY(0) translateX(-51%);
     background-color: #008dea;

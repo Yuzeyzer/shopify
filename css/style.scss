@@ -42,18 +42,20 @@ body {
 #hero {
     position: relative;
     width: 100vw;
-    &::before {
-        position: absolute;
-        content: '';
-        height: 99%;
-        width: 10.5rem;
-        left: 0;
-        top: 0.04rem;
-        border-top: 0.4rem solid $green;
-        border-bottom: 0.4rem solid $green;
-    }
     .hero__row {
         height: 100%;
+        .hero__item_1 {
+            &::before {
+                position: absolute;
+                content: '';
+                height: 98.8%;
+                width: 10.5rem;
+                left: 0;
+                top: 0.04rem;
+                border-top: 0.4rem solid $green;
+                border-bottom: 0.4rem solid $green;
+            }
+        }
         .hero__item_2 {
             max-width: 87.5rem;
         }
@@ -375,10 +377,10 @@ footer {
             &::before {
                 position: absolute;
                 content: '';
-                height: 0.3rem;
-                width: 10.5rem;
-                bottom: -10%;
-                left: -3%;
+                height: 10.5rem;
+                width: 0.3rem;
+                top: 35%;
+                left: -10%;
                 transform: translateY(0) translateX(-51%);
                 background-color: $lightblue;
             }
