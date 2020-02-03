@@ -120,7 +120,7 @@ body {
 #hero .hero__row .hero__item_1::before {
   position: absolute;
   content: '';
-  height: 98.8%;
+  height: 98.95%;
   width: 10.5rem;
   left: 0;
   top: 0.04rem;
@@ -495,6 +495,9 @@ footer .submit {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .hero__row .quote__btn {
+    margin-left: 0 !important;
+  }
   .hero__row .hero__item_1 {
     height: 100vh;
     width: 100%;
@@ -517,14 +520,35 @@ footer .submit {
   }
 }
 
-@media screen and (max-device-width: 768px) {
-  .hero__row {
+@media screen and (max-width: 768px) {
+  #hero .hero__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .hero__row .hero__item_1 {
+  #hero .hero__row .hero__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #hero .hero__row .hero__btns a {
+    display: inline-block;
+    max-width: 24.5rem;
+  }
+  #hero .hero__row .hero__item_1 {
     height: 50vh;
     width: 100%;
+  }
+  #hero .hero__row .hero__content .hero__btn + .hero__btn {
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+    text-align: center;
   }
   #hero .hero__row .hero__content {
     position: absolute;
@@ -551,9 +575,9 @@ footer .submit {
   }
 }
 
-@media screen and (max-device-width: 560px) {
+@media screen and (max-width: 560px) {
   .hero__row .hero__item_1 {
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
   }
 }
