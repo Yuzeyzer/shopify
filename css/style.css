@@ -315,7 +315,7 @@ body {
 }
 
 #services .row {
-  margin: 0 -3rem;
+  margin: 0 -1rem;
 }
 
 #services .services__col:hover .services__item {
@@ -326,10 +326,9 @@ body {
 #services .services__item {
   height: 100%;
   width: 100%;
-  padding: 4.5rem 3rem;
+  padding: 3.5rem 1rem !important;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 0 0 0.2rem 0.02rem #797d89;
-          box-shadow: 0 0 0.2rem 0.02rem #797d89;
+  border: 0.1rem solid #797d89;
   background-color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -610,7 +609,13 @@ footer .footer__bottom .foot__item_list a:hover {
   display: none !important;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1880px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
   html {
     font-size: 7px;
   }
@@ -683,7 +688,7 @@ footer .footer__bottom .foot__item_list a:hover {
     max-width: 24.5rem;
   }
   #hero .hero__row .hero__item_1 {
-    height: 50vh;
+    height: 80vh;
     width: 100%;
   }
   #hero .hero__row .hero__content .hero__btn + .hero__btn {
@@ -709,7 +714,7 @@ footer .footer__bottom .foot__item_list a:hover {
     content: '';
     height: 10.5rem;
     width: 0.3rem;
-    top: 35%;
+    top: 45%;
     left: -10%;
     -webkit-transform: translateY(0) translateX(-51%);
             transform: translateY(0) translateX(-51%);
@@ -721,6 +726,12 @@ footer .footer__bottom .foot__item_list a:hover {
   .hero__row .hero__item_1 {
     height: 100vh !important;
     width: 100%;
+  }
+  .hero__row .hero__content {
+    position: absolute;
+    top: 18% !important;
+    left: 20%;
+    right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */

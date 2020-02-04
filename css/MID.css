@@ -14,8 +14,8 @@ Version:0.0.2 */
           .m-auto {
             margin: auto;
           }
-          .p-2 {
-            padding: 2rem;
+          .p-1 {
+            padding: 1rem;
           }
           .container {
             max-Width: 60%;  /*только в данном случаем*/

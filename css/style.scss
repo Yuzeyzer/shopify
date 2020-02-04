@@ -208,7 +208,7 @@ body {
     padding: 9rem 0;
     background-color: #fafafa;
     .row {
-        margin: 0 -3rem;
+        margin: 0 -1rem;
     }
     .services__col:hover .services__item{
         transform: scale(1.05);
@@ -216,9 +216,9 @@ body {
     .services__item {
         height: 100%;
         width: 100%;
-        padding: 4.5rem 3rem;
+        padding: 3.5rem 1rem !important;
         border-radius: 1.5rem;
-        box-shadow: 0 0 0.2rem 0.02rem $gray;
+        border: 0.1rem solid $gray;
         background-color: #fff;
         transition: 0.2s;
         transform: scale(1);
@@ -444,13 +444,13 @@ footer {
 
 
 
+@media screen and (max-width:1880px) {
+    html {
+        font-size: 9.5px;
+    }
+}
 
-
-
-
-
-
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1440px) {
     html {
         font-size: 7px;
     }
@@ -507,7 +507,7 @@ footer {
         }
         }
         .hero__item_1 {
-            height: 50vh;
+            height: 80vh;
             width: 100%;
         }
         .hero__content .hero__btn + .hero__btn {
@@ -532,7 +532,7 @@ footer {
                 content: '';
                 height: 10.5rem;
                 width: 0.3rem;
-                top: 35%;
+                top: 45%;
                 left: -10%;
                 transform: translateY(0) translateX(-51%);
                 background-color: $lightblue;
@@ -544,8 +544,14 @@ footer {
 @media screen and (max-width:560px) {
     .hero__row {
         .hero__item_1 {
-            height: 100vh !important;
+            height: 100vh!important;
             width: 100%;
         }
+    }
+    .hero__row .hero__content {
+        position: absolute;
+        top: 18% !important;
+        left: 20%;
+        right: 10%;
     }
 }
