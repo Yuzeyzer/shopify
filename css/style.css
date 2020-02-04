@@ -474,6 +474,10 @@ body {
   padding: 0 1.5rem;
 }
 
+#recent .recent__item .img-size {
+  max-height: 10rem;
+}
+
 #recent h2 {
   margin-bottom: 8rem;
   font-size: 3rem;
@@ -488,6 +492,7 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   border: 0.2rem solid #151e40;
+  font-weight: 500;
   font-size: 1.3rem;
   color: #151e40;
   -webkit-transition: 0.3s;
@@ -498,6 +503,18 @@ body {
   border: 0.2rem solid #fff;
   color: #fff;
   background-color: #151e40;
+}
+
+#gallery {
+  min-height: 46rem;
+}
+
+#gallery .gallery__item {
+  padding: 1rem;
+}
+
+#gallery .gallery__item img {
+  min-height: 100%;
 }
 
 #services {
