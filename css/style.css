@@ -309,6 +309,157 @@ body {
   color: #fff;
 }
 
+#expirience {
+  padding: 5rem 0;
+}
+
+#expirience .exp__item {
+  padding: 0 3rem;
+}
+
+#expirience .exp__item .exp__slider {
+  margin-top: -10rem;
+  position: relative;
+}
+
+#expirience .exp__item .exp__slider::before {
+  position: absolute;
+  content: '';
+  height: 94%;
+  width: 94%;
+  left: 0.5rem;
+  top: 0;
+  background-color: #008dea;
+}
+
+#expirience .exp__item + .exp__item img {
+  max-height: 5rem;
+}
+
+#expirience .exp__item + .exp__item .exp__text {
+  margin-left: 3rem;
+}
+
+#expirience .exp__item + .exp__item .exp__text h4 {
+  font-size: 2.2rem;
+}
+
+#expirience .exp__item + .exp__item .exp__text p {
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  color: #797d89;
+}
+
+#expirience .exp__item + .exp__item h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #797d89;
+}
+
+#expirience .exp__item + .exp__item h3 {
+  margin: 3rem 0 6rem;
+  font-size: 2.4rem;
+}
+
+#expirience .exp__row {
+  margin: 0 -4rem;
+}
+
+#expirience .exp__row img {
+  max-height: 5rem;
+}
+
+#expirience .exp__row .exp__text {
+  padding: 0 3.5rem;
+}
+
+#expirience .exp__row .exp__text .exp__info_text {
+  margin-left: 2rem;
+  padding-right: 5rem;
+}
+
+#expirience .exp__row .exp__text .exp__info_text h4 {
+  font-size: 2.2rem;
+  color: #151e40;
+}
+
+#expirience .exp__row .exp__text .exp__info_text p {
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  color: #848791;
+}
+
+#expirience .exp__row .exp__text h3 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+#expirience .exp__row .exp__text p {
+  font-size: 1.5rem;
+  color: #797d89;
+}
+
+#expirience .exp__row .exp__text p + p {
+  margin-top: 3rem;
+}
+
+#expirience .exp__row .exp__info + .exp__info {
+  margin-top: 10rem;
+}
+
+#expirience .exp__row .exp__text + .exp__text .exp__info {
+  position: relative;
+}
+
+#expirience .exp__row .exp__text + .exp__text .exp__info::before {
+  position: absolute;
+  content: '';
+  top: -5rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #e7e7e7;
+}
+
+#expirience .exp__row .exp__text + .exp__text .exp__info + .exp__info::before {
+  height: 0.2rem;
+}
+
+#trust {
+  padding: 5rem 0;
+}
+
+#trust .trust__col {
+  padding: 1rem;
+}
+
+#trust .trust__item {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 5rem 0 !important;
+  border-radius: 1.5rem;
+  border: 0.1rem solid #797d89;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#trust .trust__item img {
+  min-height: 6.5rem;
+  max-width: 16rem;
+}
+
+#trust .trust__item .img_resize {
+  padding-left: 4rem;
+  min-height: 8.5rem;
+  max-width: 18rem;
+}
+
 #services {
   padding: 9rem 0;
   background-color: #fafafa;
@@ -618,6 +769,12 @@ footer .footer__bottom .foot__item_list a:hover {
 @media screen and (max-width: 1440px) {
   html {
     font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1326px) {
+  html {
+    font-size: 6.5px;
   }
 }
 

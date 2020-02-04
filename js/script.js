@@ -4,6 +4,11 @@ $(document).ready(function(){
         autoplay:true,
         loop:true
     });
+    $(".exp__slider").owlCarousel({
+        items:1,
+        autoplay:true,
+        loop:true
+    });
     $('.mobile__btn').on('click', function(){
         $(this).toggleClass('mobile__btn_active');
         $('.menu').toggleClass('nav-list-active')
@@ -13,3 +18,21 @@ $(document).ready(function(){
         $('.mobile__btn').removeClass('mobile__btn_active');
     });
   });
+
+//   императивный способ
+//   let fact = (n) => {
+//     let count = 1,
+//         result =1;
+//         while (count <= n) {
+//             result = result * count;
+//             count ++;
+//         }
+//         console.log(result)
+//   }
+//   fact(5);
+// let fact = () => {
+//     if (num === 1) {
+//         return num * fact(num -1)
+//     }
+// }
+// console.log(fact(6))
