@@ -588,6 +588,14 @@ footer {
     }
 }
 @media screen and (max-width:1024px) {
+    #expirience {
+        .col-6 {
+            width: 100% !important;
+        }
+    }
+    #expirience .exp__row .exp__text:nth-child(2) {
+        padding-top: 7rem;
+    }
     .hero__row {
         flex-wrap: wrap;
         .quote__btn {
@@ -671,9 +679,6 @@ footer {
             }
         }
     }
- }
- #expirience .exp__row .exp__text:nth-child(2) {
-     padding-top: 7rem;
  }
 }
 @media screen and (max-width:560px) {

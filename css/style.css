@@ -779,6 +779,12 @@ footer .footer__bottom .foot__item_list a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  #expirience .col-6 {
+    width: 100% !important;
+  }
+  #expirience .exp__row .exp__text:nth-child(2) {
+    padding-top: 7rem;
+  }
   .hero__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -876,9 +882,6 @@ footer .footer__bottom .foot__item_list a:hover {
     -webkit-transform: translateY(0) translateX(-51%);
             transform: translateY(0) translateX(-51%);
     background-color: #008dea;
-  }
-  #expirience .exp__row .exp__text:nth-child(2) {
-    padding-top: 7rem;
   }
 }
 
