@@ -544,7 +544,7 @@ footer {
     position: fixed;
     right: 6rem;
     top: 6rem;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 7rem;
@@ -623,6 +623,9 @@ footer {
     }
 }
 @media screen and (max-width:1024px) {
+    .mobile__btn {
+        display: flex !important;
+    }
     .img-size {
         max-height: 5rem !important;
     }

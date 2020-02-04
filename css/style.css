@@ -730,9 +730,7 @@ footer .footer__bottom .foot__item_list a:hover {
   position: fixed;
   right: 6rem;
   top: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -844,6 +842,11 @@ footer .footer__bottom .foot__item_list a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .mobile__btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   .img-size {
     max-height: 5rem !important;
   }
