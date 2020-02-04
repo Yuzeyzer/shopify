@@ -436,8 +436,7 @@ body {
 }
 
 #trust .trust__item {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
   text-align: center;
   padding: 5rem 0 !important;
   border-radius: 1.5rem;
