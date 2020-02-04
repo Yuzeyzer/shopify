@@ -523,6 +523,13 @@ body {
   background-color: #fafafa;
 }
 
+#services h2 {
+  margin-bottom: 7rem;
+  font-size: 3.7rem;
+  font-weight: 500;
+  color: #151e40;
+}
+
 #services .row {
   margin: 0 -1rem;
 }

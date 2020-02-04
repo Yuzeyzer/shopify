@@ -382,6 +382,12 @@ body {
 #services {
     padding: 9rem 0;
     background-color: #fafafa;
+    h2 {
+        margin-bottom: 7rem;
+        font-size: 3.7rem;
+        font-weight: 500;
+        color: $blue;
+    }
     .row {
         margin: 0 -1rem;
     }
@@ -601,30 +607,11 @@ footer {
 .owl-dots {
     display: none !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:1880px) {
     html {
         font-size: 9.5px;
     }
 }
-
 @media screen and (max-width:1440px) {
     html {
         font-size: 7px;
@@ -698,7 +685,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width:768px) {
     .gallery__item {
         padding: 1rem 0 !important;
