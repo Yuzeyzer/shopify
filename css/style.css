@@ -877,6 +877,9 @@ footer .footer__bottom .foot__item_list a:hover {
             transform: translateY(0) translateX(-51%);
     background-color: #008dea;
   }
+  #expirience .exp__row .exp__text:nth-child(2) {
+    padding-top: 7rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
