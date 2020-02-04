@@ -307,6 +307,14 @@ body {
   border-radius: 2rem;
   border: 0.1rem solid #797d89;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#facilities a:hover {
+  border: 0.1rem solid #151e40;
+  color: #151e40;
+  background-color: #fff;
 }
 
 #expirience {
