@@ -307,6 +307,10 @@ body {
 }
 #trust {
     padding: 5rem 0;
+    h2 {
+        margin-bottom: 4.5rem;
+        font-size: 3rem;
+    }
     .trust__col {
         padding: 1rem;
     }
@@ -329,6 +333,36 @@ body {
             min-height: 8.5rem;
             max-width: 18rem;
         }  
+    }
+}
+#recent {
+    .recent__row {
+        margin: 0 -1.5rem;
+    }
+    .recent__item {
+        margin-bottom: 10.5rem;
+        padding: 0 1.5rem;
+    }
+    h2 {
+        margin-bottom: 8rem;
+        font-size: 3rem;
+    }
+    p {
+        margin: 3rem 0 7rem;
+        font-size: 1.4rem;
+    }
+    a {
+        padding: 1.5rem 3rem;
+        border-radius: 3rem;
+        border: 0.2rem solid $blue;
+        font-size: 1.3rem;
+        color: $blue;
+        transition: 0.3s;
+    }
+    a:hover {
+        border: 0.2rem solid #fff;
+        color: #fff;
+        background-color: $blue;
     }
 }
 #services {

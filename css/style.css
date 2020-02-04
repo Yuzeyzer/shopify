@@ -431,6 +431,11 @@ body {
   padding: 5rem 0;
 }
 
+#trust h2 {
+  margin-bottom: 4.5rem;
+  font-size: 3rem;
+}
+
 #trust .trust__col {
   padding: 1rem;
 }
@@ -458,6 +463,41 @@ body {
   padding-left: 4rem;
   min-height: 8.5rem;
   max-width: 18rem;
+}
+
+#recent .recent__row {
+  margin: 0 -1.5rem;
+}
+
+#recent .recent__item {
+  margin-bottom: 10.5rem;
+  padding: 0 1.5rem;
+}
+
+#recent h2 {
+  margin-bottom: 8rem;
+  font-size: 3rem;
+}
+
+#recent p {
+  margin: 3rem 0 7rem;
+  font-size: 1.4rem;
+}
+
+#recent a {
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  border: 0.2rem solid #151e40;
+  font-size: 1.3rem;
+  color: #151e40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#recent a:hover {
+  border: 0.2rem solid #fff;
+  color: #fff;
+  background-color: #151e40;
 }
 
 #services {
