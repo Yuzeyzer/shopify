@@ -108,10 +108,6 @@ body {
   color: #73bc00;
 }
 
-.wrapper {
-  background: url(../img/bg2.png);
-}
-
 #hero {
   position: relative;
   width: 100vw;
@@ -129,6 +125,10 @@ body {
   top: 0;
   right: -60%;
   z-index: -1;
+}
+
+#hero .hero__row .hero__item_1 {
+  background: url(../img/bg2.png);
 }
 
 #hero .hero__row .hero__item_1::before {
