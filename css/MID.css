@@ -20,6 +20,9 @@ Version:0.0.2 */
           .p-1 {
             padding: 1rem;
           }
+          .p-2 {
+            padding: 2rem;
+          }
           .pt-3 {
             padding-top: 3rem;
           }

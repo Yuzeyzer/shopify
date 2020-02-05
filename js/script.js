@@ -9,6 +9,28 @@ $(document).ready(function(){
         autoplay:true,
         loop:true
     });
+    $(".team__slider").owlCarousel({
+        items:6,
+        autoplay:true,
+        loop:true,
+        responsive: {
+            1920: {
+                items:6
+            },
+            1366: {
+                items:4
+            },
+            1024: {
+                items:3
+            },
+            768: {
+                items:2
+            },
+            0: {
+                items:1
+            }
+        }
+    });
     $('.mobile__btn').on('click', function(){
         $(this).toggleClass('mobile__btn_active');
         $('.menu').toggleClass('nav-list-active')

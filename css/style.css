@@ -672,12 +672,13 @@ body {
 }
 
 #process .process__row .process__bg {
-  display: none;
   position: absolute;
   margin-top: 0;
   max-width: 35rem;
-  top: 0;
-  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 25%;
+  left: 49%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -753,6 +754,139 @@ body {
 
 #process .process__row .process__row_icon {
   padding: 3rem 0;
+}
+
+#team {
+  padding-top: 11rem;
+  background-color: #fafafa;
+}
+
+#team h2 {
+  font-size: 3.3rem;
+  color: #151e40;
+  margin-bottom: 5.5rem;
+}
+
+#team .team__slider h3 {
+  font-size: 2.1rem;
+  color: #151e40;
+  margin-bottom: 1.5rem;
+}
+
+#team .team__slider h5 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #848791;
+  margin-bottom: 8rem;
+}
+
+#touch {
+  padding: 8rem 0 10rem;
+  background-color: #fafafa;
+}
+
+#touch h2 {
+  font-size: 3.5rem;
+  color: #151e40;
+}
+
+#touch .touch__description {
+  margin: 2.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #848791;
+}
+
+#touch form {
+  max-width: 110rem;
+  min-height: 60rem;
+  margin: auto;
+}
+
+#touch form ::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #848791;
+}
+
+#touch form :-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #848791;
+}
+
+#touch form ::-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #848791;
+}
+
+#touch form ::placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #848791;
+}
+
+#touch .touch__info input {
+  border: 0.1rem solid #d8dadb;
+  border-radius: 0.8rem;
+  outline: none;
+  padding: 2rem;
+  width: 100%;
+}
+
+#touch .touch__info label {
+  padding: 2rem;
+}
+
+#touch .touch__info label p {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #848791;
+}
+
+#touch .touch__info label p .star {
+  color: #73bc00;
+}
+
+#touch fieldset {
+  border: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#touch fieldset .touch__services {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #848791;
+}
+
+#touch .touch__choose .checkbox[type="checkbox"] {
+  display: none;
+}
+
+#touch .touch__choose .checkbox__label {
+  padding-left: 2rem;
+}
+
+#touch .touch__choose .checkbox__label::before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 0.1rem solid #848791;
+  margin-left: -1rem;
+  margin-right: 1rem;
+}
+
+#touch .touch__choose .checkbox[type="checkbox"]:checked + label::before {
+  background-color: #292c37 !important;
+}
+
+#touch .touch__choose p {
+  margin-left: 1rem;
 }
 
 footer {
@@ -1019,6 +1153,18 @@ footer .footer__bottom .foot__item_list a:hover {
 @media screen and (max-width: 1880px) {
   html {
     font-size: 9.5px;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 8px;
   }
 }
 
