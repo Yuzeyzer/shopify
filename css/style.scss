@@ -752,6 +752,10 @@ footer {
     .process__row {
         height: auto !important;
         background: none !important;
+        .process__after {
+            position: relative;
+            margin-left: 0 !important;
+        }
     }
     .mobile__btn {
         display: flex !important;

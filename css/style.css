@@ -999,6 +999,10 @@ footer .footer__bottom .foot__item_list a:hover {
     height: auto !important;
     background: none !important;
   }
+  .process__row .process__after {
+    position: relative;
+    margin-left: 0 !important;
+  }
   .mobile__btn {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
