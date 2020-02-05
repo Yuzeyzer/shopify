@@ -14,13 +14,10 @@ $black:#292c37;
     color: $gray;
 }
 .book {
-    font-weight: 500;
+    font-weight: 400 !important;
 }
 .bold {
     font-weight: 700;
-}
-.black {
-    font-weight: 800;
 }
 .relative {
     position: relative;
@@ -42,11 +39,23 @@ body {
     box-shadow: inset 0 0 0 0.2rem $green;
     color: $green;
 }
+.wrapper {
+    background: url(../img/bg2.png);
+}
 #hero {
     position: relative;
     width: 100vw;
+    z-index: 2;
     .hero__row {
         height: 100%;
+        .bg {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            top: 0;
+            right: -60%;
+            z-index: -1;
+        }
         .hero__item_1 {
             &::before {
                 position: absolute;
@@ -181,8 +190,10 @@ body {
 #facilities {
     padding: 8.8rem 0 14rem;
     background-color: $blue;
+    z-index: 2;
     .facilities__item {
         padding: 2rem 5rem;
+        z-index: 2;
     }
     h3 {
         font-size: 1.8rem;
@@ -212,6 +223,7 @@ body {
 }
 #expirience {
     padding: 5rem 0;
+    z-index: 2;
     .exp__item {
         padding:0 3rem;
         .exp__slider {
@@ -313,6 +325,7 @@ body {
 }
 #trust {
     padding: 5rem 0;
+    z-index: 2;
     h2 {
         margin-bottom: 4.5rem;
         font-size: 3rem;
@@ -342,6 +355,7 @@ body {
     }
 }
 #recent {
+    z-index: 2;
     .recent__row {
         margin: 0 -1.5rem;
     }
@@ -351,13 +365,15 @@ body {
         .img-size {
             max-height: 10rem;
         }
+        .rc__bg {
+            min-height: 100%;
+        }
     }
     h2 {
         margin-bottom: 8rem;
         font-size: 3rem;
     }
     p {
-        margin: 3rem 0 7rem;
         font-size: 1.4rem;
     }
     a {
@@ -376,9 +392,10 @@ body {
     }
 }
 #gallery {
+    z-index: 2;
     min-height: 46rem;
     .gallery__item {
-        padding: 1rem;
+        padding: 1rem 0 1rem 1rem;
         img {
             min-height: 100%;
             min-width: 100% !important;
@@ -388,6 +405,7 @@ body {
 #services {
     padding: 9rem 0;
     background-color: #fafafa;
+    z-index: 2;
     h2 {
         margin-bottom: 7rem;
         font-size: 3.7rem;
@@ -397,21 +415,24 @@ body {
     .row {
         margin: 0 -1rem;
     }
+    .services__col {
+        min-height: 22rem;
+        img {
+            min-height: 8rem;
+            max-width: 8rem !important;
+        }
+    }
     .services__col:hover .services__item{
         transform: scale(1.05);
     }
     .services__item {
-        height: 100%;
-        width: 100%;
-        padding: 3.5rem 1rem !important;
+        min-height: 100%;
+        padding: 5rem 0!important;
         border-radius: 1.5rem;
         border: 0.1rem solid $gray;
         background-color: #fff;
         transition: 0.2s;
         transform: scale(1);
-        img {
-            min-height: 12rem;
-        }
         h4 {
             margin-top: 3rem;
             font-size: 1.8rem;
@@ -422,6 +443,7 @@ body {
 }
 footer {
     padding: 9rem 0 9.5rem;
+    z-index: 2;
     h4 {
         margin-bottom: 2rem;
         font-size: 1.5rem;

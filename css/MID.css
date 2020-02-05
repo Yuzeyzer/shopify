@@ -83,7 +83,7 @@ Version:0.0.2 */
           
           .flex-start {
             Display: flex;
-            Align-items: center;
+            align-items: flex-start;
             -webkit-box-pack: start;
             -ms-flex-pack: start;
             justify-content: flex-start;
@@ -111,7 +111,9 @@ Version:0.0.2 */
           .alg-center {
             Align-items: center;
           }
-          
+          .alg-start {
+            align-items: flex-start;
+          }
           .jst-btw {
             Justify-content: space-between;
           }

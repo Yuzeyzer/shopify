@@ -75,15 +75,11 @@
 }
 
 .book {
-  font-weight: 500;
+  font-weight: 400 !important;
 }
 
 .bold {
   font-weight: 700;
-}
-
-.black {
-  font-weight: 800;
 }
 
 .relative {
@@ -112,13 +108,27 @@ body {
   color: #73bc00;
 }
 
+.wrapper {
+  background: url(../img/bg2.png);
+}
+
 #hero {
   position: relative;
   width: 100vw;
+  z-index: 2;
 }
 
 #hero .hero__row {
   height: 100%;
+}
+
+#hero .hero__row .bg {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  right: -60%;
+  z-index: -1;
 }
 
 #hero .hero__row .hero__item_1::before {
@@ -282,10 +292,12 @@ body {
 #facilities {
   padding: 8.8rem 0 14rem;
   background-color: #151e40;
+  z-index: 2;
 }
 
 #facilities .facilities__item {
   padding: 2rem 5rem;
+  z-index: 2;
 }
 
 #facilities h3 {
@@ -319,6 +331,7 @@ body {
 
 #expirience {
   padding: 5rem 0;
+  z-index: 2;
 }
 
 #expirience .exp__item {
@@ -437,6 +450,7 @@ body {
 
 #trust {
   padding: 5rem 0;
+  z-index: 2;
 }
 
 #trust h2 {
@@ -473,6 +487,10 @@ body {
   max-width: 18rem;
 }
 
+#recent {
+  z-index: 2;
+}
+
 #recent .recent__row {
   margin: 0 -1.5rem;
 }
@@ -486,13 +504,16 @@ body {
   max-height: 10rem;
 }
 
+#recent .recent__item .rc__bg {
+  min-height: 100%;
+}
+
 #recent h2 {
   margin-bottom: 8rem;
   font-size: 3rem;
 }
 
 #recent p {
-  margin: 3rem 0 7rem;
   font-size: 1.4rem;
 }
 
@@ -514,11 +535,12 @@ body {
 }
 
 #gallery {
+  z-index: 2;
   min-height: 46rem;
 }
 
 #gallery .gallery__item {
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
 #gallery .gallery__item img {
@@ -529,6 +551,7 @@ body {
 #services {
   padding: 9rem 0;
   background-color: #fafafa;
+  z-index: 2;
 }
 
 #services h2 {
@@ -542,15 +565,23 @@ body {
   margin: 0 -1rem;
 }
 
+#services .services__col {
+  min-height: 22rem;
+}
+
+#services .services__col img {
+  min-height: 8rem;
+  max-width: 8rem !important;
+}
+
 #services .services__col:hover .services__item {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
 #services .services__item {
-  height: 100%;
-  width: 100%;
-  padding: 3.5rem 1rem !important;
+  min-height: 100%;
+  padding: 5rem 0 !important;
   border-radius: 1.5rem;
   border: 0.1rem solid #797d89;
   background-color: #fff;
@@ -558,10 +589,6 @@ body {
   transition: 0.2s;
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-#services .services__item img {
-  min-height: 12rem;
 }
 
 #services .services__item h4 {
@@ -573,6 +600,7 @@ body {
 
 footer {
   padding: 9rem 0 9.5rem;
+  z-index: 2;
 }
 
 footer h4 {
