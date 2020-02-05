@@ -483,20 +483,34 @@ body {
 }
 #process {
     padding: 10rem 0 13rem;
-    min-height: 155rem;
     h2 {
         font-size: 3.2rem;
         margin-bottom: 3rem;
     }
     .process__text {
+        margin-bottom: 5rem;
         font-size: 1.7rem;
         font-weight: 400;
         color: $gray;
-        margin-bottom: 11rem;
     }
     .process__row {
-        height: 100vh;
-        background: url(../img/process_bg.png) center no-repeat;
+        padding-top: 1rem;
+        min-height: 110rem;
+        .process__row_item {
+            img {
+                max-width: 10rem;
+                max-height: 10rem;
+            }
+        }
+        .process__bg {
+            display: none;
+            position: absolute;
+            margin-top: 0;
+            max-width: 35rem;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         .process__row_text {
             padding: 0 4rem 0;
             background-color: #fafafa;
@@ -506,8 +520,28 @@ body {
                 margin-left: 2.5rem;
             }
             img {
-                margin: 5rem 0;
+                margin: 2rem 0;
             }
+        }
+        .process__info img {
+            max-height: 4rem;
+        }
+        .process__info_text {
+            padding-top: 4rem;
+            h4 {
+                margin: 0;
+            }
+            p {
+                margin-top: 0.5rem;
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: $gray;
+            }
+            .value {
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+            }
+            margin-left: 2.5rem;
         }
         .process__before {
             position: relative;
@@ -535,7 +569,7 @@ body {
             }
         }
         .process__row_icon {
-            margin: 3.5rem 0;
+           padding: 3rem 0;
         }
     }
 }
@@ -741,6 +775,11 @@ footer {
 @media screen and (max-width:1440px) {
     html {
         font-size: 7px;
+    }
+}
+@media screen and (max-width:1366px) {
+    html {
+        font-size: 6.7px;
     }
 }
 @media screen and (max-width:1326px) {

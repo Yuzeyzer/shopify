@@ -647,7 +647,6 @@ body {
 
 #process {
   padding: 10rem 0 13rem;
-  min-height: 155rem;
 }
 
 #process h2 {
@@ -656,15 +655,31 @@ body {
 }
 
 #process .process__text {
+  margin-bottom: 5rem;
   font-size: 1.7rem;
   font-weight: 400;
   color: #848791;
-  margin-bottom: 11rem;
 }
 
 #process .process__row {
-  height: 100vh;
-  background: url(../img/process_bg.png) center no-repeat;
+  padding-top: 1rem;
+  min-height: 110rem;
+}
+
+#process .process__row .process__row_item img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+#process .process__row .process__bg {
+  display: none;
+  position: absolute;
+  margin-top: 0;
+  max-width: 35rem;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #process .process__row .process__row_text {
@@ -679,7 +694,32 @@ body {
 }
 
 #process .process__row .process__row_text img {
-  margin: 5rem 0;
+  margin: 2rem 0;
+}
+
+#process .process__row .process__info img {
+  max-height: 4rem;
+}
+
+#process .process__row .process__info_text {
+  padding-top: 4rem;
+  margin-left: 2.5rem;
+}
+
+#process .process__row .process__info_text h4 {
+  margin: 0;
+}
+
+#process .process__row .process__info_text p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #848791;
+}
+
+#process .process__row .process__info_text .value {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 #process .process__row .process__before {
@@ -712,7 +752,7 @@ body {
 }
 
 #process .process__row .process__row_icon {
-  margin: 3.5rem 0;
+  padding: 3rem 0;
 }
 
 footer {
@@ -985,6 +1025,12 @@ footer .footer__bottom .foot__item_list a:hover {
 @media screen and (max-width: 1440px) {
   html {
     font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 6.7px;
   }
 }
 
