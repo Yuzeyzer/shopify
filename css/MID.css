@@ -10,6 +10,9 @@ Version:0.0.2 */
           html {
             scroll-behavior: smooth;
             Font-size: 10px;
+            overflow-x: hidden;
+            max-width: 1920px;
+            margin: auto;
           }
           .m-auto {
             margin: auto;
