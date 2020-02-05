@@ -861,19 +861,6 @@ footer .footer__bottom .foot__item_list a:hover {
   display: none !important;
 }
 
-@media screen and (max-width: 4096px) {
-  html {
-    font-size: 20px;
-    max-width: 3400px;
-  }
-  body {
-    max-width: 3400px;
-  }
-  img {
-    width: 100% !important;
-  }
-}
-
 @media screen and (max-width: 1880px) {
   html {
     font-size: 9.5px;
