@@ -130,6 +130,7 @@ body {
 
 #hero .hero__row .hero__item_1 {
   background: url(../img/bg2.png);
+  overflow: hidden;
 }
 
 #hero .hero__row .hero__item_1::before {
