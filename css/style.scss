@@ -694,7 +694,7 @@ body {
             border-radius: 0.8rem;
         }
     }
-    .submit {
+    .submit__form {
         margin-top: 2rem !important;
         padding:1.2rem 5rem 1.2rem;
         margin: auto;
@@ -1003,12 +1003,12 @@ footer {
     }
 }
 @media screen and (max-width:768px) {
-    .submit {
+    .submit__form {
         padding:1rem 3rem 1rem !important;
         margin: auto;
         border: 0;
         outline: none;
-        font-size: 2rem;
+        font-size: 1.6rem !important;
         font-weight: 700;
     }
     .gallery__item {
