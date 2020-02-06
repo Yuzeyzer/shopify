@@ -424,7 +424,7 @@
             </fieldset>
             <fieldset>
                 <div class="row flex fl-wrap">
-                <div class="col-6 p-2" for="name">
+                    <div class="col-6 p-2" for="name">
                     <p class="touch__services">Services you are interested in (select all that apply)<span class="star">*</span></p> 
                     <div class="col-12 touch__choose  flex fl-wrap">
                         <input type="checkbox" name="" class="checkbox" id="design">
@@ -440,7 +440,23 @@
                         <p>Equipment Supply</p>
                         </label>                     
                     </div>
-                </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <p class="touch__services">Do you have an existing data center?<span class="star">*</span></p> 
+                        <div class="col-12 touch__choose checks flex fl-wrap">
+                            <input type="checkbox" name="" class="checkbox" id="yes">
+                            <label class="flex alg-center col-6 checkbox__label" for="yes">  
+                            <p>Yes</p>
+                            </label>
+                            <input type="checkbox" name="" class="checkbox" id="no">
+                            <label class="flex alg-center col-6 checkbox__label" for="no">
+                            <p>No</p>
+                            </label>                   
+                        </div>
+                    </div>
+                    <div class="col-12 text-area p-2">
+                        <textarea class="text-area-item" name="" id="" cols="140" rows="10"></textarea>
+                    </div>
                 </div>
             </fieldset>
         </form>

@@ -469,7 +469,7 @@ body {
         min-height: 100%;
         padding: 5rem 0!important;
         border-radius: 1.5rem;
-        border: 0.1rem solid $gray;
+        border: 0.1rem solid #ececee;
         background-color: #fff;
         transition: 0.2s;
         transform: scale(1);
@@ -642,8 +642,8 @@ body {
     }
     fieldset {
         border: none;
-        padding: 0 !important;
-        margin: 0 !important;
+        padding: 0!important;
+        margin: 0!important;
         .touch__services {
             font-size: 1.4rem;
             font-weight: 500;
@@ -651,10 +651,16 @@ body {
         }
     }
     .touch__choose {
+        padding: 0 0;
+        p {
+            font-size: 1.4rem;
+            color: $gray;
+        }
         .checkbox[type="checkbox"] {
             display: none;
         }
-        .checkbox__label {
+        .checkbox__label{
+            margin-top: 2rem;
             padding-left: 2rem;
         }
         .checkbox__label::before {
@@ -672,6 +678,21 @@ body {
         }
         p {
             margin-left: 1rem;
+        }
+    }
+    .checks {
+        .checkbox__label::before {           
+            border-radius: 50% !important;
+        }
+    }
+    .text-area {
+        .text-area-item {
+            padding-left: 2rem;
+            padding-top: 2rem;
+            width: 100%;
+            min-height: 19.5rem;
+            resize: none;
+            border: 0.1rem solid $gray;
         }
     }
 }

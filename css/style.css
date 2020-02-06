@@ -630,7 +630,7 @@ body {
   min-height: 100%;
   padding: 5rem 0 !important;
   border-radius: 1.5rem;
-  border: 0.1rem solid #848791;
+  border: 0.1rem solid #ececee;
   background-color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -862,11 +862,21 @@ body {
   color: #848791;
 }
 
+#touch .touch__choose {
+  padding: 0 0;
+}
+
+#touch .touch__choose p {
+  font-size: 1.4rem;
+  color: #848791;
+}
+
 #touch .touch__choose .checkbox[type="checkbox"] {
   display: none;
 }
 
 #touch .touch__choose .checkbox__label {
+  margin-top: 2rem;
   padding-left: 2rem;
 }
 
@@ -887,6 +897,19 @@ body {
 
 #touch .touch__choose p {
   margin-left: 1rem;
+}
+
+#touch .checks .checkbox__label::before {
+  border-radius: 50% !important;
+}
+
+#touch .text-area .text-area-item {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+  min-height: 19.5rem;
+  resize: none;
+  border: 0.1rem solid #848791;
 }
 
 footer {
