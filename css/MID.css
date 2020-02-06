@@ -24,7 +24,19 @@ Version:0.0.2 */
             padding: 2rem;
           }
           .pt-3 {
-            padding-top: 3rem;
+            padding-top: 3rem !important;
+          }
+          .pt-4 {
+            padding-top: 4rem !important;
+          }
+          .pt-5 {
+            padding-top: 5rem !important;
+          }
+          .pt-6 {
+            padding-top: 6.5rem !important;
+          }
+          .pt-10 {
+            padding-top: 10rem !important;
           }
           .mt-3 {
             margin-top: 3rem;
@@ -34,6 +46,18 @@ Version:0.0.2 */
           }
           .m-1 {
             margin: 1rem;
+          }
+          .mt-1 {
+            margin-top: 1rem;
+          }
+          .mt-2 {
+            margin-top: 2rem;
+          }
+          .mt-3 {
+            margin-top: 3rem;
+          }
+          .b {
+            border: 2px solid red;
           }
           .-m-1 {
             margin:0 -1rem;
