@@ -190,7 +190,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #292c37;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 #hero .hero__row .nav .menu__phone a svg {
@@ -307,6 +307,11 @@ body {
 
 #facilities .facilities__item {
   padding: 2rem 5rem;
+  min-height: 25.5rem;
+}
+
+#facilities .facilities__item img {
+  min-height: 7rem;
 }
 
 #facilities h3 {
@@ -748,7 +753,7 @@ body {
   content: '';
   background-color: #151e40;
   top: 50%;
-  right: -21%;
+  right: -20.5%;
   min-width: 7.5rem;
   height: 0.4rem;
 }
@@ -763,9 +768,26 @@ body {
   content: '';
   background-color: #151e40;
   top: 50%;
-  left: -21%;
+  left: -20.5%;
   min-width: 7.5rem;
   height: 0.4rem;
+  z-index: -1;
+}
+
+#process .process__row .process__after_position {
+  position: relative;
+  top: 1rem;
+}
+
+#process .process__row .process__after_position::before {
+  left: -17% !important;
+}
+
+#process .process__row .process__before_position2::before {
+  position: absolute;
+  content: '';
+  right: -27%;
+  min-width: 10rem;
 }
 
 #process .process__row .process__row_icon {
@@ -1223,11 +1245,45 @@ footer .footer__bottom .foot__item_list a:hover {
   html {
     font-size: 7px;
   }
+  .process__before {
+    position: relative;
+  }
+  .process__before::before {
+    right: -31.5% !important;
+    min-width: 11.5rem !important;
+  }
+  #process .process__row .process__row_icon {
+    padding: 1rem 0 !important;
+  }
+  #process .process__row .process__after_position {
+    top: 4rem;
+  }
+  #process .process__row .process__before_position2::before {
+    right: -39% !important;
+    min-width: 14rem !important;
+  }
 }
 
 @media screen and (max-width: 1366px) {
   html {
     font-size: 6.7px;
+  }
+  .process__before {
+    position: relative;
+  }
+  .process__before::before {
+    right: -30% !important;
+    min-width: 10rem !important;
+  }
+  #process .process__row .process__row_icon {
+    padding: 1rem 0 !important;
+  }
+  #process .process__row .process__after_position {
+    top: 4rem;
+  }
+  #process .process__row .process__before_position2::before {
+    right: -38% !important;
+    min-width: 14rem !important;
   }
 }
 

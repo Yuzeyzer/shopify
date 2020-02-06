@@ -101,7 +101,7 @@ body {
                 display: flex;
                 align-items: center;
                 color: $black;
-                font-weight: medium;
+                font-weight: 500;
                     svg {
                     fill:$black !important;
                     color: #000;
@@ -200,6 +200,10 @@ body {
     background-color: $blue;
     .facilities__item {
         padding: 2rem 5rem;
+        min-height: 25.5rem;
+        img {
+            min-height: 7rem;
+        }
     }
     h3 {
         font-size: 1.8rem;
@@ -561,7 +565,7 @@ body {
                 content: '';
                 background-color: $blue;
                 top: 50%;
-                right: -21%;
+                right: -20.5%;
                 min-width: 7.5rem;
                 height: 0.4rem;
             }
@@ -574,9 +578,25 @@ body {
                 content: '';
                 background-color: $blue;
                 top: 50%;
-                left: -21%;
+                left: -20.5%;
                 min-width: 7.5rem;
                 height: 0.4rem;
+                z-index: -1;
+            }
+        }
+        .process__after_position{
+            position: relative;
+            top: 1rem;
+            &::before {
+                left: -17% !important;
+            }
+        }
+        .process__before_position2 {
+            &::before {
+            position: absolute;
+                content: '';
+                right: -27%;
+                min-width: 10rem;
             }
         }
         .process__row_icon {
@@ -930,10 +950,44 @@ footer {
     html {
         font-size: 7px;
     }
+    .process__before {
+        position: relative;
+        &::before {
+            right: -31.5% !important;
+            min-width: 11.5rem !important;
+        }
+    }
+    #process .process__row .process__row_icon {
+        padding: 1rem 0 !important;
+    }
+    #process .process__row .process__after_position {
+        top: 4rem;
+    }
+    #process .process__row .process__before_position2::before {
+        right: -39% !important;
+        min-width: 14rem !important;
+    }
 }
 @media screen and (max-width:1366px) {
     html {
         font-size: 6.7px;
+    }
+    .process__before {
+        position: relative;
+        &::before {
+            right: -30% !important;
+            min-width: 10rem !important;
+        }
+    }
+    #process .process__row .process__row_icon {
+        padding: 1rem 0 !important;
+    }
+    #process .process__row .process__after_position {
+        top: 4rem;
+    }
+    #process .process__row .process__before_position2::before {
+        right: -38% !important;
+        min-width: 14rem !important;
     }
 }
 @media screen and (max-width:1326px) {

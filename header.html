@@ -1,0 +1,55 @@
+**
+* The header for our theme
+*
+* This is the template that displays all of the <head> section and everything up until <div id="content">
+    *
+    * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+    *
+    * @package shopify
+    */
+
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri (); ?>/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri (); ?>/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri (); ?>/css/MID.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri (); ?>/css/style.css">
+    </head>
+<body>
+<section id="hero">
+    <div class="row flex hero__row">
+        <div class="col-7 hero__item_1 relative wow slideInLeft" data-wow-duration="1s">
+            <img class="bg" src="./img/bg.png" alt="">
+            <header>
+                <nav class="nav flex wow slideInDown" data-wow-delay="0.3s">
+                    <div class="logo"><a href=""><img src="./img/logo.png" alt=""></a></div>
+                    <div class="menu flex alg-center">
+                        <div class="menu__phone">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="21" viewBox="0 0 9 21">
+                                    <image id="phone_icon_copy" data-name="phone_icon copy" width="9" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAVCAYAAACUhcTwAAABAUlEQVQokX3SvSuFURgA8J+vQthkoe7gX/BVzBYZpKz+AK6/QCmzQUoxWUmpu5mVgV0Gg2JhRCi5dG7Pq7fT9Z7lPO95f52P53k67DzLxgL2sYZG+tWZgUmcYAynWMzRII7RF989AefKaBO1bOcE+ws0jPX8ctjCeYFW0ZuBa2ynoDsWlvCDvZibOIi5hdJFJ3CDjTZHtl43ji5ctgMFGon4sQoNRPxShd4iHqpCTxGPVqE7fGPmP5RS8BGJm8JuKU+HuC1QGmeYRr20wWysNYuyHOEzOyUlOBX9r1VS56WS5CMVeL7cKqmY95n6wnsZvWIlHlKAZVzk7XsV8CFAA34BBaUxYwD2wzYAAAAASUVORK5CYII="/>
+                                </svg>
+                                + 1 578 677-13580 </a>
+                        </div>
+                        <ul class="nav__list flex">
+                            <li class="nav__list_item"><a href="#">About Us</a></li>
+                            <li class="nav__list_item"><a href="#footer">Contact us</a></li>
+                        </ul>
+                        <div class="menu__quote">
+                            <a href="#" class="quote__btn btn">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="mobile__btn">
+                        <span></span>
+                    </div>
+                </nav>
+            </header>

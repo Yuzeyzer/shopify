@@ -41,21 +41,3 @@ $(document).ready(function(){
     });
     new WOW().init()
   });
-
-//   императивный способ
-//   let fact = (n) => {
-//     let count = 1,
-//         result =1;
-//         while (count <= n) {
-//             result = result * count;
-//             count ++;
-//         }
-//         console.log(result)
-//   }
-//   fact(5);
-// let fact = () => {
-//     if (num === 1) {
-//         return num * fact(num -1)
-//     }
-// }
-// console.log(fact(6))

@@ -92,7 +92,7 @@ Version:0.0.2 */
             Align-items: center;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
-            justify-content: around;
+            justify-content: space-around;
           }
           
           .flex-between {
