@@ -190,10 +190,8 @@ body {
 #facilities {
     padding: 8.8rem 0 14rem;
     background-color: $blue;
-    z-index: 2;
     .facilities__item {
         padding: 2rem 5rem;
-        z-index: 2;
     }
     h3 {
         font-size: 1.8rem;
@@ -669,7 +667,7 @@ body {
             width: 2rem;
             height: 2rem;
             background-color: #fff;
-            border: 0.1rem solid $gray;
+            border: 0.1rem solid #d8dadb;
             margin-left: -1rem;
             margin-right: 1rem;
         }
