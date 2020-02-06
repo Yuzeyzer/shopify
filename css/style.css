@@ -825,7 +825,7 @@ body {
   color: #848791;
 }
 
-#touch .touch__info input {
+#touch .touch__info input, #touch .text-area input {
   border: 0.1rem solid #d8dadb;
   border-radius: 0.8rem;
   outline: none;
@@ -833,18 +833,18 @@ body {
   width: 100%;
 }
 
-#touch .touch__info label {
+#touch .touch__info label, #touch .text-area label {
   padding: 1.5rem;
 }
 
-#touch .touch__info label p {
+#touch .touch__info label p, #touch .text-area label p {
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
   font-weight: 500;
   color: #848791;
 }
 
-#touch .touch__info label p .star {
+#touch .touch__info label p .star, #touch .text-area label p .star {
   color: #73bc00;
 }
 
@@ -909,6 +909,16 @@ body {
   resize: none;
   border: 0.1rem solid #d8dadb;
   border-radius: 0.8rem;
+}
+
+#touch .submit {
+  margin-top: 2rem !important;
+  padding: 1.2rem 5rem 1.2rem;
+  margin: auto;
+  border: 0;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 footer {
@@ -1291,6 +1301,14 @@ footer .footer__bottom .foot__item_list a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .submit {
+    padding: 1rem 3rem 1rem !important;
+    margin: auto;
+    border: 0;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 700;
+  }
   .gallery__item {
     padding: 1rem 0 !important;
   }

@@ -617,7 +617,7 @@ body {
             color: $gray;
         }
     }
-    .touch__info {
+    .touch__info,.text-area {
         input {
             border: 0.1rem solid #d8dadb;
             border-radius: 0.8rem;
@@ -693,6 +693,15 @@ body {
             border: 0.1rem solid #d8dadb;
             border-radius: 0.8rem;
         }
+    }
+    .submit {
+        margin-top: 2rem !important;
+        padding:1.2rem 5rem 1.2rem;
+        margin: auto;
+        border: 0;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 700;
     }
 }
 footer {
@@ -994,6 +1003,14 @@ footer {
     }
 }
 @media screen and (max-width:768px) {
+    .submit {
+        padding:1rem 3rem 1rem !important;
+        margin: auto;
+        border: 0;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 700;
+    }
     .gallery__item {
         padding: 1rem 0 !important;
     }
