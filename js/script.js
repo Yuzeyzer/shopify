@@ -39,6 +39,7 @@ $(document).ready(function(){
         $('.menu').removeClass('nav-list-active');
         $('.mobile__btn').removeClass('mobile__btn_active');
     });
+    new WOW().init()
   });
 
 //   императивный способ
