@@ -94,9 +94,19 @@ body {
                 max-width: 18rem;
             }
             .menu__phone {
+                position: relative;
                 margin:0.8rem 7.3rem 0 7.62rem;
                 font-weight: 500;
                 font-size: 1.5rem;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 5rem;
+                    width: 0.15rem;
+                    background-color: #e5e4e3;
+                    top: -1.5rem;
+                    left: -25%;
+                }
                 a {
                 display: flex;
                 align-items: center;
@@ -441,6 +451,7 @@ body {
                 }
                 img {
                     min-height: 5rem;
+                    max-height: 6rem;
                 }
                 h3 {
                 margin-top: 4rem;
@@ -477,7 +488,7 @@ body {
     }
     .services__item {
         min-height: 100%;
-        padding: 5rem 0!important;
+        padding: 5rem 0 !important;
         border-radius: 1.5rem;
         border: 0.1rem solid #ececee;
         background-color: #fff;

@@ -177,9 +177,20 @@ body {
 }
 
 #hero .hero__row .nav .menu__phone {
+  position: relative;
   margin: 0.8rem 7.3rem 0 7.62rem;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+#hero .hero__row .nav .menu__phone::before {
+  position: absolute;
+  content: '';
+  height: 5rem;
+  width: 0.15rem;
+  background-color: #e5e4e3;
+  top: -1.5rem;
+  left: -25%;
 }
 
 #hero .hero__row .nav .menu__phone a {
@@ -598,6 +609,7 @@ body {
 
 #timeline .timeline__row .timeline__item .item__wpapper img {
   min-height: 5rem;
+  max-height: 6rem;
 }
 
 #timeline .timeline__row .timeline__item .item__wpapper h3 {
