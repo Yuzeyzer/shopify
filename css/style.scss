@@ -208,11 +208,33 @@ body {
 #facilities {
     padding: 8.8rem 0 14rem;
     background-color: $blue;
+    .x-line {
+        position: relative;
+        &::before,&::after {
+            content: '';
+            position: absolute;
+            height: 26rem;
+            width: 0.1rem;
+            background-color: #21294a;
+            top: 10%;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0 !important;
+        }
+    }
     .facilities__item {
         padding: 2rem 5rem;
         min-height: 25.5rem;
         img {
             min-height: 7rem;
+        }
+    }
+    .facilities__item:nth-child(1) {
+        a {
+            margin-top: 4rem;
         }
     }
     h3 {
@@ -961,6 +983,11 @@ footer {
     html {
         font-size: 7px;
     }
+    .facilities__item:nth-child(1) {
+        a {
+            margin-top: 2rem !important;
+        }
+    }
     .process__before {
         position: relative;
         &::before {
@@ -1037,6 +1064,11 @@ footer {
             &::before {
                 display: none !important;
             }
+        }
+    }
+    .facilities__item:nth-child(1) {
+        a {
+            margin-top: 1rem !important;
         }
     }
     .mobile__btn {
