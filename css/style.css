@@ -388,6 +388,10 @@ body {
   padding: 0 3rem;
 }
 
+#expirience .exp__item img {
+  min-width: 3.5rem;
+}
+
 #expirience .exp__item .exp__slider {
   margin-top: -10rem;
   position: relative;
